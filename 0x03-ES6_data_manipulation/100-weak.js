@@ -1,7 +1,7 @@
 export const weakMap = new WeakMap();
 let count = 1;
 
-export  function queryAPI(endpoint) {
+export function queryAPI(endpoint) {
   weakMap.set(endpoint, count);
   count += 1;
   const queryCount = weakMap.get(endpoint);
